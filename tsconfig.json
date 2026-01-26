@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist", //donde se complilará el código
+        "rootDir": "./src",// carpeta de origen
+        "lib": ["ESNext"], // librerías que se utilizarán en TypeScript
+        "target": "ESNext", // versión de ECMAScript a la que se compilará el código de TypeScript
+        "moduleResolution": "NodeNext", //como se compilarán los módulos
+        "module": "NodeNext",
+        "strict": false, // ejecuta TypeScript en modo no tan estricto
+        "sourceMap": true, // dara referencia a los archivos .ts
+        "esModuleInterop": true, // permite la interoperabilidad entre módulos CommonJS y ES
+        "declaration": true, // genera archivos de declaración .d.ts
+
+    },
+    "include": ["src/**/*.ts"]
+}
