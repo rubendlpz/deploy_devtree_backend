@@ -41,8 +41,9 @@ router.patch(
   "/user",
   body("handle").notEmpty().withMessage("El handle no puede ir vacío."),
   body("description")
-    .notEmpty()
-    .withMessage("La descripcion no puede ir vacía."),
+    .isString()
+    .withMessage("La descripcion debe ser texto."),
+  handleInputErrors,
   authenticate,
   updateProfile,
 );
